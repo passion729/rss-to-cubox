@@ -2,6 +2,9 @@ on:
   rss:
     url:
       - http://feeds.feedburner.com/ruanyifeng
+      - https://wangyurui.com/feed.xml
+      - https://insights.thoughtworks.cn/feed/
+      
 jobs:
   request:
     name: Make a HTTP Request
@@ -10,7 +13,7 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@main
         with:
-          url: https://cubox.pro/c/api/save/a27hrXh3aC1
+          url: ${{ secrets.API }}
           method: POST
           body: |
             {
