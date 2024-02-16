@@ -1,7 +1,7 @@
 on:
   rss:
     url:
-      - https://www.ruanyifeng.com/feed.html?utm_source=
+      - http://feeds.feedburner.com/ruanyifeng
 jobs:
   request:
     name: Make a HTTP Request
