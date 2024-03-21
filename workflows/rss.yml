@@ -2,9 +2,7 @@ on:
   rss:
     url:
       - http://feeds.feedburner.com/ruanyifeng
-      - https://wangyurui.com/feed.xml
-      - https://insights.thoughtworks.cn/feed/
-      
+      - https://wangyurui.com/feed.xml      
 jobs:
   request:
     name: Make a HTTP Request
