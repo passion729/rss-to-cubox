@@ -37,3 +37,11 @@ jobs:
         uses: actionsflow/setup-act-for-actionsflow@v1.2.0
       - name: Run act
         run: act --workflows ./dist/workflows --secret-file ./dist/.secrets --eventpath ./dist/event.json --env-file ./dist/.env -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:act-latest
+  keepalive-job:
+    name: Keepalive Workflow
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/keepalive-workflow@v2
